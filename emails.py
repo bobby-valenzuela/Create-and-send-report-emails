@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
+"""
+Email utility functions
+"""
 import email.message
 import mimetypes
 import os.path
 import smtplib
-
 
 def generate_email(sender, recipient, subject, body, attachment_path):
     """Creates an email with an attachement."""
